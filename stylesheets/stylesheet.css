@@ -1,0 +1,216 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+a:hover{
+  font-weight: bold;
+}
+
+
+.container {
+  max-width: 940px;
+  margin: 0 auto;
+  padding: 0 0;
+}
+
+.jumbotron {
+  min-height: 800px;
+  margin-top: 0;
+  margin-bottom: 0;
+  background: url(../images/illuminated-keyboard-croped.jpg) no-repeat center center fixed;
+  background-size: cover;
+  
+}
+.butn{
+  color: white;
+  text-decoration: none;
+  transition: background .5s;
+}
+.butn:hover {
+	background: #004394;
+	cursor: pointer; 
+	transition: background .5s;  
+	text-decoration: none;
+	color: white;
+}
+.col-md-10{
+  text-align: center;
+}
+.navi {
+  margin: 0;
+  text-align: center;
+  height: 100%;
+  display: inline-block;
+}
+
+.navi a{
+  padding: 20px 20px;
+  }
+  
+.navi ul {
+	list-style: none;
+	margin: 0 auto;
+	padding: 0;
+}
+
+.navi li {
+  color: #fff;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  font-size: 1.188em;/*19px;*/
+  letter-spacing: 1.2px;
+  display: inline-block;
+  margin: 20px 0;
+}
+.header {
+  position: fixed;
+  z-index:1;
+  max-height: 260px;
+  left: 50%;
+  /*margin-left: -470px;*/
+  transform: translateX(-50%);
+}
+.topBar{
+  margin-top: 10px;
+  background-color: #333333;
+  box-shadow: 0 0 30px #00e5e6, 1px 1px 2px black;
+  border-radius: 10px;
+  display: none;
+}
+
+.topbar div > ul > ul{
+  display:hidden;
+}
+#left {
+  float: left;
+  border-radius: 50%;
+  margin: 5px 20px;
+ 
+  }
+#right {
+  float: right;
+  border-radius: 0;
+  margin-top: 5px;
+  }
+
+.main {
+  position: relative;
+  top: 250px;
+  text-align: center;
+}
+
+.main h1 {
+  color: #333;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  font-size: 70px;
+  margin: 0 auto 80px auto;
+  text-transform: uppercase;
+  text-shadow: 0 0 30px #00e5e6, 1px 1px 2px white;
+  max-width:660px;
+  display: none;
+}
+
+.btn-main {
+  background-color: #333;
+  color: #fff;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 1.3px;
+  padding: 40px 40px;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 50%;
+  display: none;
+}
+.aboutMe{
+  background-color: #333;
+  color: white;
+  padding-top: 0px;
+  padding-bottom: 50px;
+  margin-top: 0;
+}
+
+#profilePic{
+  display: block;
+  border-radius: 50%;
+  margin: -150px auto 20px auto;
+  box-shadow: 0px 0px 15px black;
+}
+
+.supporting {
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+
+ .supporting.col {
+  float: left;
+  width: 33%;
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+}
+
+.supporting img {
+  height: 32px;
+}
+
+.supporting h2 {
+  font-weight: 600;
+  font-size: 23px;
+  text-transform: uppercase;
+}
+
+.supporting p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 0 50px;
+  margin-bottom: 40px;
+}
+.supporting a {
+	background: white;
+  border: 1px solid #333333;
+  border-radius: 5px;
+  padding: 20px;
+  text-decoration: none;
+  color: black;
+  font-family: 'Raleway', sans-serif;
+  text-transform: uppercase;
+}
+
+.clearfix {
+  clear: both;
+}
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  max-height: 70px;
+}
+
+.footer p {
+  font-family: 'Raleway', sans-serif;
+  text-transform: uppercase;
+  font-size: 11px;
+  display: inline-block;
+}
+.footer img {
+  margin-top: -10px;
+}
+
+@media (max-width: 500px) {
+  .main h1 {
+    font-size: 50px;
+    padding: 0 40px;
+  }
+
+  .supporting .col {
+    width: 100%;
+  }
+  
+  .navi { display: none; }
+  .header{ width: 50px; }
+}
