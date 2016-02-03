@@ -819,7 +819,16 @@ section #title .credits.left {
 section #title .credits.right {
   float: right;
 }
-
+/* =============================================================================
+   Added styling by CDE
+   ========================================================================== */
+/*
+ * Corrects internal page anchor displays
+ */
+ .toppad{
+  height: 80px;
+  margin: 0;
+}
 @media print, screen and (max-width: 720px) {
   #title .credits {
     display: block;
