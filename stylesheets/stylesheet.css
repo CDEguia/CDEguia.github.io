@@ -81,7 +81,7 @@ a:hover{
 .topbar div > ul > ul{
   display:hidden;
 }
-.topbar div > a
+.topbar div > a{}
 #left {
   float: left;
   border-radius: 50%;
