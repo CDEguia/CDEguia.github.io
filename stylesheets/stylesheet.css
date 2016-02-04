@@ -134,6 +134,7 @@ a:hover{
 }
 
 .aboutMe .col{
+  padding: 20px;
   float: left;
   width: 50%;
   font-family: 'Raleway', sans-serif;
@@ -214,10 +215,7 @@ a:hover{
     padding: 0 40px;
   }
 
-  .supporting .col {
-    width: 100%;
-  }
-
+  .supporting .col, 
   .aboutMe .col {
     width: 100%;
   }
