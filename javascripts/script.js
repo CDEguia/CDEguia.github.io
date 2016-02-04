@@ -30,7 +30,7 @@ $(function() {
       poped = false;
       return;
     }
-    $('.topBar').css({'width':''});
+    $('.topBar').css({'width':'100%'});
     $('.navi').css({'display':'inline-block'});
     poped = true;
   });

@@ -220,8 +220,14 @@ a:hover{
     width: 100%;
   }
   
-  .nav { display: none; }
-  .header{ width: 100%;
+  .navi { 
+    display: none; 
+  }
+  .topBar { 
+    width:50px; 
+  }
+  .header { 
+    width: 100%;
   transform: translateX(0); 
     left: 0;
   }
