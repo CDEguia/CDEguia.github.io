@@ -20,19 +20,14 @@ $(document).ready(function() {
 });
 
 $(function() {
-  var poped;
-  ( $('.navi').css('display') == 'none')? poped = false : poped = true; 
-  
   $('#left').click(function() {
-    if (poped) {
+    if ($('.navi').css('display') == 'inline-block') {
       $('.navi').css({'display':'none'});
       $('.topBar').css({'width':'50px'});
-      poped = false;
       return;
     }
-    $('.topBar').css({'width':''});
+    $('.topBar').css({'width':'100%'});
     $('.navi').css({'display':'inline-block'});
-    poped = true;
   });
-});
+});  
 
