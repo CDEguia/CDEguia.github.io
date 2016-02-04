@@ -133,6 +133,12 @@ a:hover{
   margin-top: 0;
 }
 
+.aboutMe .col{
+  float: left;
+  width: 50%;
+  font-family: 'Raleway', sans-serif;
+}
+
 #profilePic{
   display: block;
   border-radius: 50%;
@@ -209,6 +215,10 @@ a:hover{
   }
 
   .supporting .col {
+    width: 100%;
+  }
+
+  .aboutMe .col {
     width: 100%;
   }
   
