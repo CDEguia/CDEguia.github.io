@@ -155,7 +155,7 @@ a:hover{
 
 .supporting .col {
   float: left;
-  width: 33%;
+  width: 25%;
   font-family: 'Raleway', sans-serif;
   text-align: center;
 }
@@ -224,7 +224,7 @@ a:hover{
     display: none; 
   }
   .topBar { 
-    width:50px; 
+    width: 50px; 
   }
   .header { 
     width: 100%;
