@@ -14,114 +14,157 @@
 
   <body>
   
-    <div class="header">
-      <div class="container">
-        <div class="topBar">
-          <div class="row">
-            <div class="col-xs-3 col-md-1 ">
-              <img id="left"  src="images/Tag.png" height= 50px width= 50px />
-            </div>
-            <div class="col-xs-6 col-md-10 ">
-              <ul class="navi">
-                <li><a class="butn" href="../index#">Home</a></li>
-                <li><a class="butn" href="Resume/index.html">About</a></li>
-                <li><a class = "butn">Projects</a></li>
-                <!--  <ul id=>
-                    <li class="fork"><a href="https://github.com/CDEguia/CDEguia.github.io">View On GitHub</a></li>
-                    <li><a class="butn" href="JavaScripts/index.html">Javascript</a></li>
-                  </ul>
-                -->
-                <li><a class="butn" href="#">Team</a></li>
-                <li><a class="butn" href="mailto:candelario.eguia@laverne.edu">Contact</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-      
-    <div class="jumbotron">
-      <div class="container">  
-        <div class="main">
-          <h1>Code Overload</h1>
-          <a class="btn-main butn" href="#">Get Started</a>
-        </div>
+    <div id='navbardetection'>
+</div>
+<nav class='navbar navbar-fixed-top navbar-inverse'  id='navgation' >
+  <div class='container-fluid' id='insidenavbar'>
+    <a class="navbar-brand" href="#">Candelario "Daniel" Eguia</a>
+    <ul class="nav navbar-nav navbar-right">
+      <li role="presentation"><a href="#home" class="scrollTo"><span class="glyphicon glyphicon-home" aria-hidden="true"></span><span class="navText"> Home<span></a></li>
+      <li role="presentation"><a href="#about"><span class="glyphicon glyphicon-user" aria-hidden="true"></span><span class="navText"> About</span></a></li>
+      <li role="presentation"><a href="#portfolio"><span class="glyphicon glyphicon-book" aria-hidden="true"></span><span class="navText"> Portfolio</span></a></li>
+      <li role="presentation"><a href="#connect"><span class="glyphicon glyphicon-link" aria-hidden="true"></span><span class="navText"> Connect</span></a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class='jumbotron' id='home'>
+  <div class='container'>
+    <div class='row'>
+      <div class='col-xs-12 col-sm-12 col-md-12 col-lg-10 vertical-align '>
+        <h1 class='text-center '>Solutions Through Elegant Designs</h1>
       </div>
     </div>
 
-    <div class="aboutMe">
-      <div class="container">
-        <div class="row">
-          <div>
-            <img src="images/Me_Suited.jpg" id="profilePic" height=350px width=350px>
-          </div>
+  </div>
+</div>
+
+<div class='jumbotron jumbo-size' id='about'>
+  <div class='container'>
+    <div class="row">
+      <div>
+        <img class='img-responsive img-circle' src="https://raw.githubusercontent.com/CDEguia/CDEguia.github.io/master/images/Me_Suited.jpg" width="200" height="200" id="profilePic">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <h2>Candelario D. Eguia</h2>
+        <hr>
+        <p>Hi, I'm a Computer Software Science/Engineering student at the University of La Verne in La Verne, CA. I work on web development and desktop applications.</p>
+      </div>
+
+      <div class="col-md-6">
+        <h2>About</h2>
+        <hr>
+        <p>I am currently in the final stages of completing my Bachelor's of Engineering in Computer Software at the University of La Verne. I enjoy a variety of activities and love delving into new fields. A few of the thing I like to do in my spare time
+          include:
+        </p>
+        <ul>
+          <li>Reading</li>
+          <li>Programming</li>
+          <li>Martial Arts</li>
+          <li>Yoga</li>
+          <li>Watching SiFi</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class='jumbotron jumbo-size' id='portfolio'>
+  <div class='container text-center'>
+    <h1 class='other'>Recent Projects</h1>
+
+    <div class='row'>
+      <div class='col-xs-12 col-sm-6 col-md-4'>
+        <div class='thumbnail'>
+          <h3>Arduino Thermometer</h3>
+          <a href="https://github.com/CDEguia/ArdinoThermometor"  target="_blank">
+          <img src="https://raw.githubusercontent.com/CDEguia/ArdinoThermometor/master/BianaryThermometor.jpg" alt="Example 1" class="img-thumbnail" width="304" height="236">
+          <div class="caption">
+            
+            <p>Built using an Arduino Uno, 7 LEDs to represent temperatures from 0 to 120 degrees Fahrenheit, in binary.</p>
+            <button class="btn btn-primary" role="button">Github Repository</button>
+          </a>
+      </div>
+
         </div>
-        <div class="row">
-          <div class="col" > 
-            <h1> <a id="candelario-d-eguia" class="anchor" href="#candelario-d-eguia" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Candelario D. Eguia</h1>
-            <hr>
-            <p>Hi, I'm a Computer Software Science/Engineering student at the University of La Verne in La Verne, CA. I work on web development and desktop applications.</p>
-          </div>
-
-          <div class="col"> 
-            <h1>
-            <a id="about" class="anchor" href="#about" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>About</h1>
-
-            <hr>
-
-             <p>I am currently in the final stages of completing my Bachelor's of Engineering in Computer Software at the University of La Verne. I enjoy a variety of activities and love delving into new fields. A few of the thing I like to do in my spare time include:</p>
+      </div>
+      <div class='col-xs-12 col-sm-6 col-md-4'>
+        <div class='thumbnail'>
+          <h3>Random Quote Machine</h3>
+          <img src="https://raw.githubusercontent.com/CDEguia/CDEguia.github.io/master/images/QuotePic.png" alt="Random Quote Pic" class="img-thumbnail" width="304" height="236">
+          <div class="caption">
+           
+            <p>A FreeCodeCamp Zipline that uses elements of:</p>
             <ul>
-              <li>Reading</li>
-              <li>Programming</li>
-              <li>Martial Arts</li>
-              <li>Yoga</li>
-              <li>Watching SiFi</li>
+              <li>getJSON</li>
+              <li>JSON.stringify</li>
+              <li>.replace</li>
+              <li>encodeURIComponent</li>
+              <li>Twitter post</li>
             </ul>
+            <p><a href="http://codepen.io/CDEguia/full/zqNNxW/" class="btn btn-primary" role="button" target="_blank">Random Quote Pen</a></p>
+          </div>
+        </div>
+      </div>
+      <div class='col-xs-12 col-sm-6 col-md-4'>
+        <div class='thumbnail'>
+          <h3>Weather App</h3>
+          <img src="https://raw.githubusercontent.com/CDEguia/CDEguia.github.io/master/images/WeatherApp.png" alt="Weather App" class="img-thumbnail" width="304" height="236">
+           <div class="caption">
+            
+            <p>A FreeCodeCamp Zipline.</p>
+            <p><a href="http://codepen.io/CDEguia/full/Vapwag/" class="btn btn-primary" role="button" target="_blank">Weather Pen</a></p>
           </div>
         </div>
       </div>
     </div>
-
-    <div class="supporting">
-      <div class="container">
-        <div class="col">
-          <p>----------------</p>
-          <h2>Design</h2>
-          <p>Make your projects look great and interact beautifully.</p>
-          <a href="#">Learn More</a>
-        </div>
-        <div class="col">
-          <p>----------------</p>
-          <h2>Develop</h2>
-          <p>Use modern tools to analize functional, technical, and operational requirements.</p>
-          <a href="#">Learn More</a>
-        </div>
-        <div class="col">
-          <p>----------------</p>
-          <h2>Deploy</h2>
-          <p>Use modern tools to turn your design into an interactive web site.</p>
-          <a href="#">Learn More</a>
-        </div>
-        <div class="col">
-          <p>----------------</p>
-          <h2>Test</h2>
-          <p>Employ modern software testing tools and best practices throughout the software development life cycle.</p>
-          <a href="#">Learn More</a>
-        </div>
-      </div>
-      <div class="clearfix"></div>
-    </div>
-
-    <div class="footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-4 col-xs-4"> <p>&copy; California 2016</p> </div>
-          <div class="col-lg-4 col-xs-4"><span class="credits left">Project maintained by <a href="https://github.com/CDEguia">CDEguia</a></span></div>
-          <div class="col-lg-4 col-xs-4"> <p>Also Hosted by:</p>
-            <a  href="http://neocities.org"><img src="cat.png" height= 60px width= 60px></a>
+    <div class='row'>
+      <div class='col-xs-12 col-sm-6 col-md-4'>
+        <div class='thumbnail'>
+          <h3>Wiki Searcher</h3>
+          <img src="https://raw.githubusercontent.com/CDEguia/CDEguia.github.io/master/images/WikiSearch.png" alt="Wiki Search Photo" class="img-thumbnail" width="304" height="236">
+          <div class="caption">
+            
+            <p>A FreeCodeCamp Zipline.</p>
+            <p><a href="http://codepen.io/CDEguia/full/dMWbmZ/" class="btn btn-primary" role="button" target="_blank">Wiki Searh Pen</a></p>
           </div>
         </div>
       </div>
+
+      <div class='col-xs-12 col-sm-6 col-md-4'>
+        <div class='thumbnail'>
+          <img src="https://raw.githubusercontent.com/CDEguia/ArdinoThermometor/master/BianaryThermometor.jpg" alt="Example 5" class="img-thumbnail" width="304" height="236">
+        </div>
+      </div>
+      <div class='col-xs-12 col-sm-6 col-md-4'>
+        <div class='thumbnail'>
+          <img src="https://raw.githubusercontent.com/CDEguia/ArdinoThermometor/master/BianaryThermometor.jpg" alt="Example 6" class="img-thumbnail" width="304" height="236">
+        </div>
+      </div>
     </div>
+  </div>
+</div>
+
+<div class='jumbotron jumbo-size' id='connect'>
+  <div class='container vertical-align '>
+    <div class='row'>
+      <h1 class='text-center' style = 'color:#FFFFFF;'>Connect</h1>
+    </div>
+    <div class='row' >
+      <div class='col-xs-12 col-sm-12 col-md-12 text-center' id='cicons'>
+
+        <a href="https://github.com/cdeguia" target="_blank"><img class='icon' title="Github" src="https://raw.githubusercontent.com/CDEguia/CDEguia.github.io/master/images/social-media_github_simple-black_512x512.png" alt="Github" width="45" height="45" /></a>
+
+        <a href="https://freecodecamp.com/cdeguia" target="_blank"><img class="img-circle icon" title="FreeCodeCamp" src="https://raw.githubusercontent.com/CDEguia/CDEguia.github.io/master/images/social-media_freecodecamp.png" alt="FreeCodeCamp" width="45" height="45" /></a>
+        <a href="https://twitter.com/dceguia" target="_blank"><img class='icon' title="Twitter" src="https://raw.githubusercontent.com/CDEguia/CDEguia.github.io/master/images/flat-social-icons_0008_twitter.png" alt="Twitter" width="45" height="45" /></a>
+        <a href="https://plus.google.com/113516011488617768237" target="_blank"><img class='icon' title="Google+" src="https://raw.githubusercontent.com/CDEguia/CDEguia.github.io/master/images/flat-social-icons_0001_google-plus.png" alt="Google+" width="45" height="45" /></a>
+        <a href="https://www.linkedin.com/in/candelariodanieleguia" target="_blank"><img class='icon' title="LinkedIn" src="https://raw.githubusercontent.com/CDEguia/CDEguia.github.io/master/images/flat-social-icons_0006_linkedin.png" alt="LinkedIn" /></a>
+
+      </div>
+    </div>
+  </div>
+</div>
   </body>
 </html>
