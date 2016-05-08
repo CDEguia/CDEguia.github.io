@@ -3,235 +3,172 @@ html, body {
   padding: 0;
 }
 
+:root {
+  --icon-size: 3.5em;
+  --icon-increase: 1.4em;
+  --main-color: #111111;
+}
+body {
+  background-color: #555555;
+  max-width: 1280px;
+  margin: auto;
+  padding-top: 50px;
+}
+a {
+  color:#202020;
+  transition: color 1.5s;
+}
 a:hover{
-  font-weight: bold;
+  text-decoration: none;
+  color:#202020;
+  transition: color .5s;
+}
+#navbardetection{
+  opacity: 0.2;
+  background: #900;
+  min-height=100px;
+}
+.navbar-fixed-top .container-fluid {
+  max-width: 1280px;
+  border-bottom-style: solid;
+  border-bottom-width: 3px;
+  border-bottom-color: #000000;
+  background-color: #111111;
 }
 
+.navbar {
+  margin-bottom: 0;
+  box-shadow: 0px 2px 5px black;
+}
 
-.container {
-  max-width: 940px;
-  margin: 0 auto;
-  padding: 0 0;
+.navbar li {
+  margin-right: 5px;
+  transition: background .5s;
+}
+
+.navbar li:hover {
+  background: #094965;
+  transition: background .5s;
 }
 
 .jumbotron {
-  min-height: 800px;
-  margin-top: 0;
-  margin-bottom: 0;
-  background: url(../images/illuminated-keyboard-croped.jpg) no-repeat center center fixed;
-  background-size: cover;
-  
-}
-.butn{
-  color: white;
-  text-decoration: none;
-  transition: background .5s;
-}
-.butn:hover {
-	background: #004394;
-	cursor: pointer; 
-	transition: background .5s;  
-	text-decoration: none;
-	color: white;
-}
-.col-md-10{
-  text-align: center;
-}
-.navi {
-  margin: 0;
-  text-align: center;
-  height: 100%;
-  display: inline-block;
+  margin-bottom: 0px;
 }
 
-.navi a{
-  padding: 20px 20px;
-  }
-  
-.navi ul {
-	list-style: none;
-	margin: 0 auto;
-	padding: 0;
+#home {
+  background: url('https://raw.githubusercontent.com/CDEguia/CDEguia.github.io/master/images/sky-828648_1280.jpg') no-repeat center center fixed;
 }
 
-.navi li {
-  color: #fff;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 500;
-  font-size: 1.188em;/*19px;*/
-  letter-spacing: 1.2px;
-  display: inline-block;
-  margin: 20px 0;
-}
-.header {
-  position: fixed;
-  z-index:1;
-  max-height: 260px;
-  left: 50%;
-  transform: translateX(-50%);
-}
-.topBar{
-  margin-top: 10px;
-  background-color: #333333;
-  box-shadow: 0 0 30px #00e5e6, 1px 1px 2px black;
-  border-radius: 10px;
-  display: none;
+.center-block {
+  float: none;
 }
 
-.topbar div > ul > ul{
-  display:hidden;
-}
-.topbar div > a{}
-#left {
-  float: left;
-  border-radius: 50%;
-  margin: 5px 20px;
- 
-  }
-#right {
-  float: right;
-  border-radius: 0;
-  margin-top: 5px;
-  }
-
-.main {
+.jumbo-size {
   position: relative;
-  top: 250px;
-  text-align: center;
 }
 
-.main h1 {
-  color: #333;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 600;
-  font-size: 70px;
-  margin: 0 auto 80px auto;
-  text-transform: uppercase;
-  text-shadow: 0 0 30px #00e5e6, 1px 1px 2px white;
-  max-width:660px;
-  display: none;
+.vertical-align {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -40%);
+}
+#home h1{
+  color: var(--main-color);
+}
+h1.other{
+  padding: 5px;
+  color: #000000;
+  background-color: rgba(245, 245, 245, 0.4);
+  border-radius: 75px;
 }
 
-.btn-main {
-  background-color: #333;
-  color: #fff;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 600;
-  font-size: 18px;
-  letter-spacing: 1.3px;
-  padding: 40px 40px;
-  text-decoration: none;
-  text-transform: uppercase;
-  border-radius: 50%;
-  display: none;
-}
-.aboutMe{
-  background-color: #333;
+#about {
+  background: url('https://raw.githubusercontent.com/CDEguia/CDEguia.github.io/master/images/starry-sky-1082279_1280.jpg') no-repeat center center fixed;
   color: white;
-  padding-top: 0px;
-  padding-bottom: 50px;
-  margin-top: 0;
 }
 
-.aboutMe .col{
-  padding: 20px;
-  float: left;
-  width: 50%;
-  font-family: 'Raleway', sans-serif;
-}
-
-#profilePic{
+#about img {
   display: block;
-  border-radius: 50%;
-  margin: -150px auto 20px auto;
+  margin: 50px auto 20px auto;
   box-shadow: 0px 0px 15px black;
 }
 
-
-.supporting {
-  padding-top: 30px;
-  padding-bottom: 50px;
+li {
+  font-size: 1.25em;
 }
 
-.supporting .col {
-  float: left;
-  width: 25%;
-  font-family: 'Raleway', sans-serif;
-  text-align: center;
+#portfolio {
+  background: url('https://raw.githubusercontent.com/CDEguia/CDEguia.github.io/master/images/forest-1183524_1280.jpg') no-repeat center center fixed;
+  min-height: 1200px;
 }
 
-.supporting img {
-  height: 32px;
+.thumbnail {
+  background-color: rgba(124, 124, 124, 0.8);
+}
+ul {
+  color: #000000;
+display: block;
+  text-align: left;
+list-style-type: disc;
+margin-before: 1em;
+margin-after: 1em;
+margin-start: 0;
+margin-end: 0;
+padding-start: 40px; }
+
+#connect {
+  color: white;
+  background: #413127;
+}
+:root {
+  --icon-size: 3.5em;
+  --icon-increase: 1.4em;
+}
+.icon {
+  margin: calc(var(--icon-increase)/2) ;
+  width: var(--icon-size);
+  height:  var(--icon-size);
+  transition: .5s;
 }
 
-.supporting h2 {
-  font-weight: 600;
-  font-size: 23px;
-  text-transform: uppercase;
+.icon:hover {
+  margin: 0em;
+  width: calc(var(--icon-size) + var(--icon-increase));
+  height: calc(var(--icon-size) + var(--icon-increase));
+  transition: .5s;
 }
 
-.supporting p {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 20px;
-  padding: 0 50px;
-  margin-bottom: 40px;
-}
-.supporting a {
-	background: white;
-  border: 1px solid #333333;
-  border-radius: 5px;
-  padding: 20px;
-  text-decoration: none;
-  color: black;
-  font-family: 'Raleway', sans-serif;
-  text-transform: uppercase;
-}
-
-.clearfix {
-  clear: both;
-}
-
-.footer {
-  background-color: #333;
-  color: #fff;
-  padding: 20px 0;
-  max-height: 70px;
-}
-
-.footer p {
-  font-family: 'Raleway', sans-serif;
-  text-transform: uppercase;
-  font-size: 11px;
-  display: inline-block;
-}
-.footer img {
-  margin-top: -10px;
-}
-
-@media (max-width: 660px) {
-  .main h1 {
-    font-size: 50px;
-    padding: 0 40px;
+@media (max-width: 768px) {
+  .navbar-right {
+    float: right!important;
   }
+  .navText {
+    display: none;
+  }
+  .navbar-nav {
+    display: flex;
+  }
+}
 
-  .supporting .col, 
-  .aboutMe .col {
-    width: 100%;
+@media (max-width: 464px) {
+  #portfolio {
+    height: 1300px;
+  }
+  .navbar-brand,
+  .navText {
+    display: none;
+  }
+  .navbar-nav {
+    display: flex;
+  }
+ 
+  #portfolio {
+    min-height: 2100px;
+  }
+  #cicons {
+    margin-left: auto;
+    margin-right: auto;
   }
   
-  .navi { 
-    display: none; 
-  }
-  .topBar { 
-    width: 50px; 
-  }
-  .header { 
-    width: 100%;
-  transform: translateX(0); 
-    left: 0;
-  }
-  .aboutMe {
-  left: auto;
-}
 }
