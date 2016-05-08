@@ -1,33 +1,48 @@
-$(window).load(function() {
-    $( ".topBar" ).show( 1500 );
-     $('h1').slideDown(1500);  
-     $('.btn-main').show(1500); 
+function winResize() {
+  $('#home').height(window.innerHeight);
+  $('#connect').height(window.innerHeight);
+}
+
+winResize();
+
+$(window).resize(function() {
+  winResize();
 });
 
-$(document).ready(function() {
-  
-    $('h1').mouseenter(function() {
-      $(this).fadeOut(1000);
-      $(this).fadeIn(1000); 
-    });
+// handle links with @href started with '#' only
+$(document).on('click', 'a[href^="#"]', function(e) {
+  var id = $(this).attr('href'); // target element id
+
+  var $id = $(id); // target element
+
+  // prevent standard hash navigation (avoid blinking in IE)
+  e.preventDefault();
+
+  // top position relative to the document
+  var pos = $(id).offset().top;
+
+  // animated top scrolling
+  $('body, html').animate({
+    scrollTop: pos
+  }, 'slow');
+});
+var previous_scroll = $(window).scrollTop();
+
+$(window).on('scroll', function() {
+  var scroll = $(window).scrollTop(),
+    scroll_change = scroll - previous_scroll;
+  previous_scroll = scroll;
+  $(window).trigger('custom_scroll', [scroll_change]);
+});
+$(window).on('custom_scroll', function pos(e, scroll_change) {
+   //if($('#navgation').css("display") != 'none'){
+  if (scroll_change > 0) {
+   
     
-    $('.btn-main').mouseenter(function() {
-      $(this).fadeOut(500);
-      $(this).fadeIn(500);   
-    });
-      
-     
+    $('#navgation').slideUp("slow");
+  //  $('#navbardetection').style.display = 'block'; //document.getElementById('navgation').style.display = 'none';
+  } else {
+   // $('#navgation').show("slow");
+   $('#navgation').slideDown("slow"); //document.getElementById('navgation').style.display = 'block';
+  }
 });
-
-$(function() {
-  $('#left').click(function() {
-    if ($('.navi').css('display') == 'inline-block') {
-      $('.navi').css({'display':'none'});
-      $('.topBar').css({'width':'50px'});
-      return;
-    }
-    $('.topBar').css({'width':'100%'});
-    $('.navi').css({'display':'inline-block'});
-  });
-});  
-
