@@ -2,8 +2,10 @@ function winResize() {
   $('#home').height(window.innerHeight);
   $('#connect').height(window.innerHeight);
 }
+$(document).ready(function(){
+  winResize();
+});
 
-winResize();
 
 $(window).resize(function() {
   winResize();
