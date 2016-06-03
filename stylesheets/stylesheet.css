@@ -26,7 +26,7 @@ a:hover{
 #navbardetection{
   opacity: 0.2;
   background: #900;
-  min-height=100px;
+  min-height:100px;
 }
 .navbar-fixed-top .container-fluid {
   max-width: 1280px;
@@ -111,11 +111,11 @@ ul {
 display: block;
   text-align: left;
 list-style-type: disc;
-margin-before: 1em;
-margin-after: 1em;
-margin-start: 0;
-margin-end: 0;
-padding-start: 40px; }
+-webkit-margin-before: 1em;
+  -webkit-margin-after: 1em;
+  -webkit-margin-start: 0;
+  -webkit-margin-end: 0;
+  -webkit-padding-start: 40px; }
 
 #connect {
   color: white;
