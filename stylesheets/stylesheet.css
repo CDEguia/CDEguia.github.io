@@ -23,6 +23,12 @@ a:hover{
   color:#202020;
   transition: color .5s;
 }
+a:visited{
+  text-decoration: none;
+}
+a:-webkit-any-link {
+  text-decoration: none;
+}
 #navbardetection{
   opacity: 0.2;
   background: #900;
