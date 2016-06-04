@@ -6,8 +6,8 @@ function showCoords(event) {
     var y = event.clientY;
     var isHidden = $('#navgation').is(':visible');
     console.log(isHidden)
-    if((y >=0 && y<=15) && isHidden != true){
-        window.scrollBy(0, -25);
+    if((y >=0 && y<=25) && isHidden != true){
+        window.scrollBy(0, -1);
     }
 }
 $(document).ready(function () {
@@ -47,8 +47,8 @@ $(window).on('scroll', function () {
 $(window).on('custom_scroll', function pos(e, scroll_change) {
   //if($('#navgation').css("display") != 'none'){
   if (scroll_change > 0) {
-    $('#show').slideDown("slow");
-    //  $('#navbardetection').style.display = 'block'; //document.getElementById('navgation').style.display = 'none';
+    $('#navgation').slideUp("slow");
+     // $('#navbardetection').style.display = 'block'; //document.getElementById('navgation').style.display = 'none';
   } else {
     $('#navgation').slideDown("slow"); //document.getElementById('navgation').style.display = 'block';
   }
