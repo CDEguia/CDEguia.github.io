@@ -6,7 +6,7 @@ html{
 :root {
   --icon-size: 3.5em;
   --icon-increase: 1.4em;
-  --main-color: #111111;
+  --main-color: #aaa;
 }
 body {
   background-color: #555555;
@@ -112,8 +112,10 @@ li {
 .thumbnail {
   background-color: rgba(124, 124, 124, 0.8);
 }
+#portfolio p, h3, h4, ul {
+    color: #222222;
+}
 ul {
-  color: #000000;
 display: block;
   text-align: left;
 list-style-type: disc;
@@ -121,7 +123,8 @@ list-style-type: disc;
   -webkit-margin-after: 1em;
   -webkit-margin-start: 0;
   -webkit-margin-end: 0;
-  -webkit-padding-start: 40px; }
+  -webkit-padding-start: 40px;
+}
 
 #connect {
   color: white;
