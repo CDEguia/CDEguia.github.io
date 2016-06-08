@@ -8,13 +8,7 @@ html, body{
   --icon-increase: 1.4em;
   --main-color: #aaa;
 }
-/*
-body {
-  background-color: #555555;
-  max-width: 1280px;
-  margin: auto;
-  padding-top: 50px;
-}*/
+
 a {
   color:#202020;
   transition: color 1.5s;
@@ -35,13 +29,7 @@ a:-webkit-any-link {
   background: #900;
   min-height:100px;
 }
-.navbar-fixed-top .container-fluid {
-  /*max-width: 1280px;
-  /*border-bottom-style: solid;
-  border-bottom-width: 3px;
-  /*border-bottom-color: #000000;
-  /*background-color: #111111;*/
-}
+
 
 .navbar {
   margin: 10px auto 0 auto;
@@ -49,11 +37,16 @@ a:-webkit-any-link {
   box-shadow: 0 0 30px #00e5e6, 1px 1px 2px black;
   border-radius: 10px;
   display: none;
+  border-bottom: 0;
 }
 
 .navbar li {
   margin-right: 5px;
   transition: background .5s;
+
+}
+.navbar-nav>li>a {
+  padding-bottom: 12px;
 }
 
 .navbar li:hover {
@@ -105,9 +98,13 @@ h1.other{
 }
 
 #about {
-  background: url('https://raw.githubusercontent.com/CDEguia/CDEguia.github.io/master/images/starry-sky-1082279_1280.jpg') no-repeat center center fixed;
-  background-size: cover;
+  /*background: url('https://raw.githubusercontent.com/CDEguia/CDEguia.github.io/master/images/starry-sky-1082279_1280.jpg') no-repeat center center fixed;
+  background-size: cover;*/
   color: white;
+  background-color: #333;
+}
+#about ul{
+  color:white;
 }
 
 #about img {
@@ -121,7 +118,7 @@ li {
 }
 
 #portfolio {
-  background: url('https://raw.githubusercontent.com/CDEguia/CDEguia.github.io/master/images/forest-1183524_1280.jpg') no-repeat center center fixed;
+  background: url('https://raw.githubusercontent.com/CDEguia/CDEguia.github.io/master/images/forest-1183524_1280.jpg') no-repeat center center;
   background-size: cover;
   min-height: 1200px;
 }
