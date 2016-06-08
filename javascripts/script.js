@@ -53,3 +53,7 @@ $(window).on('custom_scroll', function pos(e, scroll_change) {
     $('#navgation').slideDown("slow"); //document.getElementById('navgation').style.display = 'block';
   }
 });
+$(window).load(function() {
+    $( "#navgation" ).show( 1500, function(){$('h1').slideDown(1500);});
+
+});
