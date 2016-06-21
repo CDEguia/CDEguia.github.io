@@ -98,8 +98,13 @@ h1.other{
 }
 
 #know{
+    background: url('../images/office-black-and-white-1280x960.jpg') no-repeat center center fixed;
+    background-size: cover;
   color: #00e5e6;
-  background-color: #094965;
+}
+#know .container{
+    background-color: rgba(124, 124, 124, 0.8);
+    background-size: cover;
 }
 #know p{
   font-size: 2.5em;
@@ -158,7 +163,14 @@ list-style-type: disc;
 
 #connect {
   color: white;
-  background: #413127;
+    background: url('../images/internet-connect-1278x981.jpg') no-repeat center center fixed;
+    background-size: cover;
+
+}
+#connect .container{
+    max-width: 500px;
+    background-color: rgba(100, 100, 100, 0.6);
+    border-radius: 40%;
 }
 :root {
   --icon-size: 3.5em;
