@@ -97,6 +97,19 @@ h1.other{
   border-radius: 75px;
 }
 
+#know{
+  color: #00e5e6;
+  background-color: #094965;
+}
+.rightRotated{
+  -webkit-transform: rotate(10deg); /* Chrome, Safari, Opera */
+  transform: rotate(10deg);
+}
+
+.leftRotated{
+  -webkit-transform: rotate(-10deg); /* Chrome, Safari, Opera */
+  transform: rotate(-10deg);
+}
 #about {
   /*background: url('https://raw.githubusercontent.com/CDEguia/CDEguia.github.io/master/images/starry-sky-1082279_1280.jpg') no-repeat center center fixed;
   background-size: cover;*/
