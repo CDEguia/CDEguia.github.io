@@ -2,11 +2,10 @@ function winResize() {
   $('#home').height(window.innerHeight);
   $('#connect').height(window.innerHeight);
 }
-function showCoords(event) {
+function showNavOnMove(event) {
     var y = event.clientY;
     var isHidden = $('#navgation').is(':visible');
-    console.log(isHidden)
-    if((y >=0 && y<=25) && isHidden != true){
+    if((y >=0 && y<=50) && isHidden != true){
         window.scrollBy(0, -1);
     }
 }
@@ -42,18 +41,48 @@ $(window).on('scroll', function () {
   var scroll = $(window).scrollTop(),
       scroll_change = scroll - previous_scroll;
   previous_scroll = scroll;
+    revealOnScroll();
   $(window).trigger('custom_scroll', [scroll_change]);
+
 });
+
 $(window).on('custom_scroll', function pos(e, scroll_change) {
-  //if($('#navgation').css("display") != 'none'){
   if (scroll_change > 0) {
     $('#navgation').slideUp("slow");
-     // $('#navbardetection').style.display = 'block'; //document.getElementById('navgation').style.display = 'none';
   } else {
-    $('#navgation').slideDown("slow"); //document.getElementById('navgation').style.display = 'block';
+    $('#navgation').slideDown("slow"); 
   }
 });
+
+// animate the navigation bar on loading of window
 $(window).load(function() {
     $( "#navgation" ).show( 1500, function(){$('h1').slideDown(1500);});
 
 });
+
+function revealOnScroll() {
+    var scrolled = $(window).scrollTop(),
+        win_height_padded = $(window).height() * 1.1;
+
+    // Showed...
+    $(".revealOnScroll:not(.animated)").each(function () {
+        var $this     = $(this),
+            offsetTop = $this.offset().top;
+      
+        if (scrolled + win_height_padded >= offsetTop + 150 && scrolled <= offsetTop + win_height_padded ) {
+                $this.addClass('animated');
+            $this.addClass('rightRotated');
+           
+        }
+    });
+    // Hidden...
+    $(".revealOnScroll.animated").each(function (index) {
+        var $this     = $(this),
+            offsetTop = $this.offset().top;
+        if (scrolled + win_height_padded < offsetTop || scrolled > offsetTop + win_height_padded ) {
+            $(this).removeClass('animated')
+        }
+    });
+}
+
+revealOnScroll();

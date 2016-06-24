@@ -25,9 +25,11 @@ a:-webkit-any-link {
   text-decoration: none;
 }
 #navbardetection{
-  opacity: 0.2;
-  background: #900;
-  min-height:100px;
+  opacity: 0;
+  height: 55px;
+  width: 100%;
+  position: fixed;
+  z-index: 5;
 }
 
 
@@ -110,14 +112,15 @@ h1.other{
   font-size: 2.5em;
 }
 .rightRotated{
-  -webkit-transform: rotate(10deg); /* Chrome, Safari, Opera */
-  transform: rotate(10deg);
+  -webkit-transform: rotate(9deg); /* Chrome, Safari, Opera */
+  transform: rotate(9deg);
 }
 
 .leftRotated{
   -webkit-transform: rotate(-10deg); /* Chrome, Safari, Opera */
   transform: rotate(-10deg);
 }
+.revealOnScroll{ opacity: 0}
 #about {
   /*background: url('https://raw.githubusercontent.com/CDEguia/CDEguia.github.io/master/images/starry-sky-1082279_1280.jpg') no-repeat center center fixed;
   background-size: cover;*/
@@ -189,7 +192,20 @@ list-style-type: disc;
   height: calc(var(--icon-size) + var(--icon-increase));
   transition: .5s;
 }
+.animated {
+  animation: flyin 2s ease forwards;
+  opacity: 0;
+  transform: scale(2);
+  filter: blur(4px);
+}
 
+@keyframes flyin {
+  to {
+    filter: blur(0);
+    transform: scale(1);
+    opacity: 1;
+  }
+}
 @media (max-width: 768px) {
   .navbar-right {
     float: right!important;
@@ -203,9 +219,6 @@ list-style-type: disc;
 }
 
 @media (max-width: 464px) {
-  #portfolio {
-    height: 1300px;
-  }
   .navbar-brand,
   .navText {
     display: none;
@@ -213,7 +226,6 @@ list-style-type: disc;
   .navbar-nav {
     display: flex;
   }
- 
   #portfolio {
     min-height: 2100px;
   }
