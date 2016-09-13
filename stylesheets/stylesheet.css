@@ -107,6 +107,7 @@ h1.other{
 #know .container{
     background-color: rgba(124, 124, 124, 0.8);
     background-size: cover;
+    padding: 20px 0;
 }
 #know p{
   font-size: 2.5em;
