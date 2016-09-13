@@ -186,9 +186,8 @@ list-style-type: disc;
 
 }
 #connect .container{
-    max-width: 500px;
     background-color: rgba(100, 100, 100, 0.6);
-    border-radius: 40%;
+    border-radius: 30%;
 }
 :root {
   --icon-size: 3.5em;
