@@ -1,2 +1,2 @@
 # CDEguia.github.io
-Personal site to explore
+Personal site www.cdeguia.me to explore
