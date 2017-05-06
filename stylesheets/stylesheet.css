@@ -61,8 +61,7 @@ a:-webkit-any-link {
 }
 
 #home {
-  background-color:blue;
-  background: url('https://raw.githubusercontent.com/CDEguia/CDEguia.github.io/master/images/sky-828648_1280.jpg') no-repeat center center fixed;
+  background:darkslategray url('https://raw.githubusercontent.com/CDEguia/CDEguia.github.io/master/images/sky-828648_1280.jpg') no-repeat center center fixed;
   background-size: cover;
 }
 
