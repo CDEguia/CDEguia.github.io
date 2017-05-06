@@ -56,7 +56,7 @@ $(window).on('custom_scroll', function pos(e, scroll_change) {
 
 // animate the navigation bar on loading of window
 $(window).load(function() {
-    $( "#navgation" ).show( 1500, function(){$('h1').slideDown(1500);});
+    $( "#navgation" ).show( 500, function(){$('h1').slideDown(500);});
 
 });
 
@@ -68,7 +68,7 @@ function revealOnScroll() {
     $(".revealOnScroll:not(.animated)").each(function () {
         var $this     = $(this),
             offsetTop = $this.offset().top;
-        if (scrolled + win_height_padded >= offsetTop + 150 && scrolled <= offsetTop + win_height_padded ) {
+        if (scrolled + win_height_padded >= offsetTop*1.1 && scrolled <= offsetTop + win_height_padded ) {
                 $this.addClass('animated');
             $this.addClass('rightRotated');
            
@@ -78,21 +78,21 @@ function revealOnScroll() {
     $(".revealOnScroll.animated").each(function (index) {
         var $this     = $(this),
             offsetTop = $this.offset().top ;
-        if (scrolled + win_height_padded < offsetTop || scrolled > offsetTop + win_height_padded-600 ) {
+        if (scrolled + win_height_padded < offsetTop || scrolled > offsetTop + win_height_padded*.9) {
             $(this).removeClass('animated')
         }
     });
     $('.profilePic:not(.slide-in').each(function(){
             var $this     = $(this),
             offsetTop = $this.offset().top;
-        if (scrolled + win_height_padded >= offsetTop + 150 && scrolled <= offsetTop + win_height_padded ) {
+        if (scrolled + win_height_padded >= offsetTop*1.1 && scrolled <= offsetTop + win_height_padded ) {
                 $this.addClass('slide-in');           
         }
     });
     $(".profilePic.slide-in").each(function (index) {
         var $this     = $(this),
             offsetTop = $this.offset().top ;
-        if (scrolled + win_height_padded < offsetTop || scrolled > offsetTop + win_height_padded-600 ) {
+        if (scrolled + win_height_padded < offsetTop || scrolled > offsetTop + win_height_padded*.9 ) {
             $(this).removeClass('slide-in')
         }
     });
