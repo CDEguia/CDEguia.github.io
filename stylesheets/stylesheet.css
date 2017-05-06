@@ -137,7 +137,7 @@ h1.other{
   box-shadow: 0 0 15px black;
 }
 .slide-in{
-  animation-duration: 3s;
+  animation-duration: 1s;
   animation-name: slidein;
 }
 
@@ -206,7 +206,7 @@ list-style-type: disc;
   transition: .5s;
 }
 .animated {
-  animation: flyin 2s ease forwards;
+  animation: flyin 1s ease forwards;
   opacity: 0;
   transform: scale(2);
   filter: blur(4px);
