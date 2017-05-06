@@ -68,7 +68,6 @@ function revealOnScroll() {
     $(".revealOnScroll:not(.animated)").each(function () {
         var $this     = $(this),
             offsetTop = $this.offset().top;
-      
         if (scrolled + win_height_padded >= offsetTop + 150 && scrolled <= offsetTop + win_height_padded ) {
                 $this.addClass('animated');
             $this.addClass('rightRotated');
@@ -78,9 +77,23 @@ function revealOnScroll() {
     // Hidden...
     $(".revealOnScroll.animated").each(function (index) {
         var $this     = $(this),
-            offsetTop = $this.offset().top;
-        if (scrolled + win_height_padded < offsetTop || scrolled > offsetTop + win_height_padded ) {
+            offsetTop = $this.offset().top ;
+        if (scrolled + win_height_padded < offsetTop || scrolled > offsetTop + win_height_padded-600 ) {
             $(this).removeClass('animated')
+        }
+    });
+    $('.profilePic:not(.slide-in').each(function(){
+            var $this     = $(this),
+            offsetTop = $this.offset().top;
+        if (scrolled + win_height_padded >= offsetTop + 150 && scrolled <= offsetTop + win_height_padded ) {
+                $this.addClass('slide-in');           
+        }
+    });
+    $(".profilePic.slide-in").each(function (index) {
+        var $this     = $(this),
+            offsetTop = $this.offset().top ;
+        if (scrolled + win_height_padded < offsetTop || scrolled > offsetTop + win_height_padded-600 ) {
+            $(this).removeClass('slide-in')
         }
     });
 }
