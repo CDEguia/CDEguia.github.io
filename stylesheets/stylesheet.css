@@ -2,13 +2,13 @@ html, body{
   margin: 0;
   padding: 0;
 }
-
 :root {
   --icon-size: 3.5em;
   --icon-increase: 1.4em;
   --main-color: #aaa;
+  --largeicon-size: 130px;
+  --largeicon-increase: 20px;
 }
-
 a {
   color:#202020;
   transition: color 1.5s;
@@ -31,8 +31,6 @@ a:-webkit-any-link {
   position: fixed;
   z-index: 5;
 }
-
-
 .navbar {
   margin: 10px auto 0 auto;
   background-color: #000;
@@ -193,9 +191,17 @@ list-style-type: disc;
     background-color: rgba(100, 100, 100, 0.6);
     border-radius: 35%;
 }
-:root {
-  --icon-size: 3.5em;
-  --icon-increase: 1.4em;
+.largeicon{
+  margin: calc(var(--largeicon-increase)/2) ;
+  width: var(--largeicon-size);
+  height:  var(--largeicon-size);
+  transition: .5s;
+}
+.largeicon:hover {
+  margin: 0;
+  width: calc(var(--largeicon-size) + var(--largeicon-increase));
+  height: calc(var(--largeicon-size) + var(--largeicon-increase));
+  transition: .5s;
 }
 .icon {
   margin: calc(var(--icon-increase)/2) ;
