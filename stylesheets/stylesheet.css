@@ -6,8 +6,8 @@ html, body{
   --icon-size: 3.5em;
   --icon-increase: 1.4em;
   --main-color: #aaa;
-  --largeicon-size: 130px;
-  --largeicon-increase: 20px;
+  --largeicon-size: 80%;
+  --largeicon-increase: 20%;
 }
 a {
   color:#202020;
