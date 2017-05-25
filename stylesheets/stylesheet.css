@@ -119,19 +119,14 @@ h1.other{
   transform: rotate(-10deg);
 }
 .revealOnScroll{ opacity: 0}
-#about {
-  /*background: url('https://raw.githubusercontent.com/CDEguia/CDEguia.github.io/master/images/starry-sky-1082279_1280.jpg') no-repeat center center fixed;
-  background-size: cover;*/
-  color: white;
-  background-color: #333;
+
+#about .container{
+    background-color: rgba(100, 100, 100, 0.9);
 }
-#me{
+#about{
   background: url('../images/illuminated-keyboard-croped.jpg') no-repeat center center fixed;
     background-size: cover;
-  color: #00e5e6;
-}
-#about ul{
-  color:white;
+  color: black;
 }
 
 #about img {
