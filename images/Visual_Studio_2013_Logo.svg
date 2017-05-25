@@ -17,7 +17,56 @@
    inkscape:version="0.91 r13725"
    sodipodi:docname="Visual_Studio_2013_Logo.svg">
   <defs
-     id="defs4" />
+     id="defs4">
+    <filter
+       inkscape:label="Channel Transparency"
+       style="color-interpolation-filters:sRGB;"
+       id="filter3390">
+      <feColorMatrix
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 -10 -10 10 10 0 "
+         in="SourceGraphic"
+         result="colormatrix"
+         id="feColorMatrix3392" />
+      <feComposite
+         in="colormatrix"
+         in2="SourceGraphic"
+         operator="in"
+         result="fbSourceGraphic"
+         id="feComposite3394" />
+      <feColorMatrix
+         result="fbSourceGraphicAlpha"
+         in="fbSourceGraphic"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         id="feColorMatrix3396" />
+      <feColorMatrix
+         id="feColorMatrix3398"
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 -10 -10 10 10 0 "
+         in="fbSourceGraphic"
+         result="colormatrix" />
+      <feComposite
+         id="feComposite3400"
+         in2="fbSourceGraphic"
+         in="colormatrix"
+         operator="in"
+         result="fbSourceGraphic" />
+      <feColorMatrix
+         result="fbSourceGraphicAlpha"
+         in="fbSourceGraphic"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         id="feColorMatrix3402" />
+      <feColorMatrix
+         id="feColorMatrix3404"
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 -10 -10 10 10 0 "
+         in="fbSourceGraphic"
+         result="colormatrix" />
+      <feComposite
+         id="feComposite3406"
+         in2="fbSourceGraphic"
+         in="colormatrix"
+         operator="in"
+         result="composite1" />
+    </filter>
+  </defs>
   <sodipodi:namedview
      id="base"
      pagecolor="#ffffff"
@@ -26,7 +75,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.35"
-     inkscape:cx="-112.14286"
+     inkscape:cx="-380.71429"
      inkscape:cy="634.28571"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
@@ -44,7 +93,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -54,7 +103,8 @@
      id="layer1">
     <g
        id="g4147"
-       transform="matrix(0.125,0,0,0.125,54.642857,59.066926)">
+       transform="matrix(0.125,0,0,0.125,54.642857,59.066926)"
+       style="filter:url(#filter3390)">
       <path
          style="fill:#fefefe"
          d="m -414.28571,558.07648 0,-1034 1000,0 1000.00001,0 0,1034 0,1034.00002 -1000.00001,0 -1000,0 0,-1034.00002 z"
