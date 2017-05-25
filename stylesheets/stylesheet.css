@@ -6,8 +6,8 @@ html, body{
   --icon-size: 3.5em;
   --icon-increase: 1.4em;
   --main-color: #aaa;
-  --largeicon-size: 80%;
-  --largeicon-increase: 20%;
+  --largeicon-size: 124px;
+  --largeicon-increase: 48px;
 }
 a {
   color:#202020;
@@ -141,7 +141,7 @@ h1.other{
 
 @keyframes slidein {
   from {
-    margin-left: 100%;
+    margin-left: 90%;
   }
 
   to {
