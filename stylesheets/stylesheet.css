@@ -163,15 +163,25 @@ li {
 
 .thumbnail {
   background-color: rgba(124, 124, 124, 0.8);
+  min-height: 580px;
+  position: relative;
+}
+
+.bottom{
+  position: absolute;
+  min-width: 125px;
+  left:50%;
+  margin-left:-63px;
+  bottom: 20px;
 }
 #portfolio p, h3, h4, ul {
     color: #222222;
 }
 ul {
-display: block;
+  display: block;
   text-align: left;
-list-style-type: disc;
--webkit-margin-before: 1em;
+  list-style-type: disc;
+  -webkit-margin-before: 1em;
   -webkit-margin-after: 1em;
   -webkit-margin-start: 0;
   -webkit-margin-end: 0;
