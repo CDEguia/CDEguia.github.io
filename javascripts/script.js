@@ -4,7 +4,7 @@ function winResize() {
 }
 function showNavOnMove(event) {
     var y = event.clientY;
-    var isHidden = $('#navgation').is(':visible');
+    var isHidden = $('#navigation').is(':visible');
     if((y >=0 && y<=50) && isHidden != true){
         window.scrollBy(0, -1);
     }
@@ -48,15 +48,15 @@ $(window).on('scroll', function () {
 
 $(window).on('custom_scroll', function pos(e, scroll_change) {
   if (scroll_change > 0) {
-    $('#navgation').slideUp("slow");
+    $('#navigation').slideUp("slow");
   } else {
-    $('#navgation').slideDown("slow"); 
+    $('#navigation').slideDown("slow"); 
   }
 });
 
 // animate the navigation bar on loading of window
 $(window).load(function() {
-    $( "#navgation" ).show( 500, function(){$('h1').slideDown(500);});
+    $( "#navigation" ).show( 500, function(){$('h1').slideDown(500);});
 
 });
 
