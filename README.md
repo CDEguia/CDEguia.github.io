@@ -1,6 +1,6 @@
 # CDEguia.github.io
 
-A page to display and list my work experience with code.
+A page to show my experience with code.
 
 ## Languages, Frameworks, and More
 
