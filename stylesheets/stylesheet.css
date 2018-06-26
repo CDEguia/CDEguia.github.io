@@ -1,13 +1,15 @@
 html, body{
   margin: 0;
-  padding: 0;
+  padding: 0 20px;
+  
 }
+
 :root {
   --icon-size: 3.5em;
   --icon-increase: 1.4em;
   --main-color: #aaa;
-  --largeicon-size: 124px;
-  --largeicon-increase: 48px;
+  --largeIcon-size: 124px;
+  --largeIcon-increase: 48px;
 }
 a {
   color:#202020;
@@ -24,7 +26,7 @@ a:visited{
 a:-webkit-any-link {
   text-decoration: none;
 }
-#navbardetection{
+#navBarDetection{
   opacity: 0;
   height: 55px;
   width: 100%;
@@ -56,11 +58,7 @@ a:-webkit-any-link {
 
 .jumbotron {
   margin-bottom: 0;
-}
-
-#home {
-  background:darkslategray url('https://raw.githubusercontent.com/CDEguia/CDEguia.github.io/master/images/sky-828648_1280.jpg') no-repeat center center fixed;
-  background-size: cover;
+  background-color: rgb(42, 159, 255);
 }
 
 
@@ -125,15 +123,17 @@ h1.other{
     background-color: rgba(100, 100, 100, 0.9);
 }
 #about{
-  background: url('../images/illuminated-keyboard-croped.jpg') no-repeat center center fixed;
+  
     background-size: cover;
   color: black;
 }
 
 #about img {
   display: block;
+  
   margin: 50px auto 20px auto;
   box-shadow: 0 0 15px black;
+
 }
 .slide-in{
   animation-duration: 1s;
@@ -142,7 +142,7 @@ h1.other{
 
 @keyframes slidein {
   from {
-    margin-left: 90%;
+    margin-left: 110%;
   }
 
   to {
@@ -156,7 +156,7 @@ li {
 }
 
 #portfolio {
-  background: url('https://raw.githubusercontent.com/CDEguia/CDEguia.github.io/master/images/forest-1183524_1280.jpg') no-repeat center center;
+  background: url('../images/internet-connect-1278x981.jpg') no-repeat center center;
   background-size: cover;
   min-height: 1200px;
 }
@@ -174,7 +174,7 @@ li {
   margin-left:-63px;
   bottom: 20px;
 }
-#portfolio p, h3, h4, ul {
+#portfolio p, h3, h4, ul, li {
     color: #222222;
 }
 ul {
@@ -190,24 +190,23 @@ ul {
 
 #connect {
   color: white;
-    background: url('../images/internet-connect-1278x981.jpg') no-repeat center center fixed;
-    background-size: cover;
+    
 
 }
 #connect .container{
     background-color: rgba(100, 100, 100, 0.6);
     border-radius: 35%;
 }
-.largeicon{
-  margin: calc(var(--largeicon-increase)/2) ;
-  width: var(--largeicon-size);
-  height:  var(--largeicon-size);
+.largeIcon{
+  margin: calc(var(--largeIcon-increase)/2) ;
+  width: var(--largeIcon-size);
+  height:  var(--largeIcon-size);
   transition: .5s;
 }
-.largeicon:hover {
+.largeIcon:hover {
   margin: 0;
-  width: calc(var(--largeicon-size) + var(--largeicon-increase));
-  height: calc(var(--largeicon-size) + var(--largeicon-increase));
+  width: calc(var(--largeIcon-size) + var(--largeIcon-increase));
+  height: calc(var(--largeIcon-size) + var(--largeIcon-increase));
   transition: .5s;
 }
 .icon {

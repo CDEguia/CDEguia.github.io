@@ -1,6 +1,6 @@
 # CDEguia.github.io
 
-A page to display and list my work experience with code.
+A page to show my experience with code.
 
 ## Languages, Frameworks, and More
 
@@ -57,9 +57,3 @@ I am currently in the final stages of completing my Bachelor's of Engineering in
 * [Free code camp](https://freecodecamp.com/cdeguia)
 * [GooglePlus](https://plus.google.com/113516011488617768237)
 * [Twitter](https://twitter.com/dceguia)
-
-    
-
-
-
-
