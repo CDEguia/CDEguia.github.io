@@ -86,14 +86,16 @@ function revealOnScroll() {
             var $this     = $(this),
             offsetTop = $this.offset().top;
         if (scrolled + win_height_padded >= offsetTop*1.1 && scrolled <= offsetTop + win_height_padded ) {
-                $this.addClass('slide-in');           
+            this.style.visibility='visible';
+            $this.addClass('slide-in');  
         }
     });
     $(".profilePic.slide-in").each(function (index) {
         var $this     = $(this),
             offsetTop = $this.offset().top ;
-        if (scrolled + win_height_padded < offsetTop || scrolled > offsetTop + win_height_padded*.9 ) {
-            $(this).removeClass('slide-in')
+        if (scrolled + win_height_padded < offsetTop || scrolled > offsetTop + win_height_padded*.5 ) {
+            $(this).removeClass('slide-in');
+            this.style.visibility='hidden';
         }
     });
 }
