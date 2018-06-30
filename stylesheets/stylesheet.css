@@ -63,7 +63,7 @@ a:-webkit-any-link {
 
 .jumbotron {
   margin-bottom: 0;
-  background-color: rgb(42, 159, 255);
+  background-color: white;
 }
 
 .jumbo-size {
@@ -133,7 +133,7 @@ h1.other{
 }
 
 #about{
-  background-size: cover;
+    background-size: cover;
   color: black;
 }
 
