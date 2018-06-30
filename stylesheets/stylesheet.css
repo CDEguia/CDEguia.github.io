@@ -1,7 +1,6 @@
 html, body{
   margin: 0;
-  padding: 0 20px;
-  
+  padding: 0;
 }
 
 :root {
@@ -11,21 +10,26 @@ html, body{
   --largeIcon-size: 124px;
   --largeIcon-increase: 48px;
 }
+
 a {
   color:#202020;
   transition: color 1.5s;
 }
+
 a:hover{
   text-decoration: none;
   color:#202020;
   transition: color .5s;
 }
+
 a:visited{
   text-decoration: none;
 }
+
 a:-webkit-any-link {
   text-decoration: none;
 }
+
 #navBarDetection{
   opacity: 0;
   height: 55px;
@@ -33,6 +37,7 @@ a:-webkit-any-link {
   position: fixed;
   z-index: 5;
 }
+
 .navbar {
   margin: 10px auto 0 auto;
   background-color: #000;
@@ -61,7 +66,6 @@ a:-webkit-any-link {
   background-color: rgb(42, 159, 255);
 }
 
-
 .jumbo-size {
   position: relative;
 }
@@ -72,6 +76,7 @@ a:-webkit-any-link {
   left: 50%;
   transform: translate(-50%, -40%);
 }
+
 #home h1{
   color: #333;
   font-family: 'Raleway', sans-serif;
@@ -92,18 +97,21 @@ h1.other{
 }
 
 #know{
-    background: url('../images/office-black-and-white-1280x960.jpg') no-repeat center center fixed;
-    background-size: cover;
+  background: url('../images/office-black-and-white-1280x960.jpg') no-repeat center center fixed;
+  background-size: cover;
   color: #00e5e6;
 }
+
 #know .container{
     background-color: rgba(124, 124, 124, 0.8);
     background-size: cover;
     padding: 20px 0;
 }
+
 #know p{
   font-size: 2.5em;
 }
+
 .revealOnScroll{ opacity: 0}
 .animated {
   animation: flyin 1s ease forwards;
@@ -119,22 +127,22 @@ h1.other{
     opacity: 1;
   }
 }
+
 #about .container{
     background-color: rgba(100, 100, 100, 0.9);
 }
+
 #about{
-  
-    background-size: cover;
+  background-size: cover;
   color: black;
 }
 
 #about img {
-  display: block;
-  
+  display: block;  
   margin: 50px auto 20px auto;
   box-shadow: 0 0 15px black;
-
 }
+
 .slide-in{
   animation-duration: 1s;
   animation-name: slidein;
@@ -144,7 +152,6 @@ h1.other{
   from {
     margin-left: 110%;
   }
-
   to {
     margin-left: 41.5%;
   }
@@ -174,9 +181,11 @@ li {
   margin-left:-63px;
   bottom: 20px;
 }
+
 #portfolio p, h3, h4, ul, li {
     color: #222222;
 }
+
 ul {
   display: block;
   text-align: left;
@@ -190,25 +199,27 @@ ul {
 
 #connect {
   color: white;
-    
-
 }
+
 #connect .container{
     background-color: rgba(100, 100, 100, 0.6);
     border-radius: 35%;
 }
+
 .largeIcon{
   margin: calc(var(--largeIcon-increase)/2) ;
   width: var(--largeIcon-size);
   height:  var(--largeIcon-size);
   transition: .5s;
 }
+
 .largeIcon:hover {
   margin: 0;
   width: calc(var(--largeIcon-size) + var(--largeIcon-increase));
   height: calc(var(--largeIcon-size) + var(--largeIcon-increase));
   transition: .5s;
 }
+
 .icon {
   margin: calc(var(--icon-increase)/2) ;
   width: var(--icon-size);
@@ -224,12 +235,15 @@ ul {
 }
 
 @media (max-width: 768px) {
+  
   .navbar-right {
     float: right!important;
   }
+  
   .navText {
     display: none;
   }
+  
   .navbar-nav {
     display: flex;
   }
@@ -240,15 +254,17 @@ ul {
   .navText {
     display: none;
   }
+  
   .navbar-nav {
     display: flex;
   }
+  
   #portfolio {
     min-height: 2100px;
   }
+  
   #cicons {
     margin-left: auto;
     margin-right: auto;
   }
-  
 }
