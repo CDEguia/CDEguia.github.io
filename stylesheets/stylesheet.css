@@ -77,6 +77,12 @@ a:-webkit-any-link {
   transform: translate(-50%, -40%);
 }
 
+#home {
+  background: url('../images/illuminated-keyboard-croped.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #00e5e6;
+}
+
 #home h1{
   color: #333;
   font-family: 'Raleway', sans-serif;
@@ -133,7 +139,8 @@ h1.other{
 }
 
 #about{
-    background-size: cover;
+  background: url('../images/forest-1183524_1280.jpg') no-repeat center center fixed;
+  background-size: cover;
   color: black;
 }
 
@@ -198,6 +205,8 @@ ul {
 }
 
 #connect {
+  background: url('../images/sky-828648_1280.jpg') no-repeat center center fixed;
+  background-size: cover;
   color: white;
 }
 
