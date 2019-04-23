@@ -2,13 +2,6 @@ function winResize() {
   $('#home').height(window.innerHeight);
   $('#connect').height(window.innerHeight);
 }
-/* function showNavOnMove(event) {
-    var y = event.clientY;
-    var isHidden = $('#navigation').is(':visible');
-    if((y >=0 && y<=50) && isHidden != true){
-        window.scrollBy(0, -1);
-    }
-} */
 
 $(document).ready(function () {
   winResize();
