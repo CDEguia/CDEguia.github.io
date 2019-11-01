@@ -43,7 +43,7 @@ I am currently in the final stages of completing my __Bachelor's of Engineering 
 + Yoga
 
 
-## Demo's
+## Demos
 
 + Arduino
 + Assembly
