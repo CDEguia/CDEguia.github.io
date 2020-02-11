@@ -1,60 +1,43 @@
-# CDEguia.github.io
+# Blog and CV
 
-A page to show my experience with code.
-
-## Languages, Frameworks, and More
-
-* __C++__
-* JavaScript
-    * MeteorJS
-    * JQuery
-* HTML
-* CSS
-    * Bootstrap
-* Assembly
-* Markdown
-* Python
-* Git
-    * Github
-    * Bitbucket
-* Webstorm
-* VisualStudio
-* __VSCode__
-
-## Personal
+## About me
 
 Candelario D. Eguia
 
-A former hobby programer working in the Basic language. I have worked on the testing side of both software and construction, and am having a blast coming back to the programing side of industry. I am currently working with a startup whose main goal is getting kids using high tech tools focused around computer software.
+A former hobby programer working in the Basic language. I have worked on the testing side of both software and construction, and am having a blast coming back to the programing side of industry. I have worked with the maker-space startup [Be A Maker Club](https://www.beamaker.club/) and am currently developing open source software for [The Eureka Room](https://www.theeurekaroombham.com/) through an association with [TAG NW](https://www.tagnw.org/).
 
-I am currently in the final stages of completing my __Bachelor's of Engineering in Computer Software__ at the *University of La Verne*. I enjoy a variety of activities and love delving into new fields. A few of the thing I like to do in my spare time include:
+Having acquired a [Bachelor's of Computer Science](https://artsci.laverne.edu/compsci/) with a concentration in __Software__ from the [University of La Verne](http://www.laverne.edu/) I enjoy a variety of activities and love delving into new fields. I currently spend my commute listening to [Jupiter broadcasting](https://www.jupiterbroadcasting.com/) and the [Coding Blocks](https://www.codingblocks.net/) podcasts among others.
 
-+ Programming
-+ PodCast Junkie
-    + Linux Action Show
-    + Coder Radio
-    + Coding BLocks Podcast
-    + The Restart Podcast
-    + ...
-+ Reading
-    + Military
-    + SiFi
-+ Martial Arts
-+ Yoga
+## Current Projects
 
+* [Eurekaroom](https://pypi.org/project/eurekaroom/)
 
-## Demos
+## Knowledge
 
-+ Arduino
-+ Assembly
-+ Web
-+ C++
+I have worked with the following languages, frameworks, IDE's, and version-control systems
+
+* Languages and frameworks
+    * C++
+    * [Markdown](https://www.markdownguide.org/)
+    * [Python](https://www.python.org/)
+    * [JavaScript](https://www.javascript.com/)
+        * [MeteorJS](https://www.meteor.com/)
+        * [JQuery](https://jquery.com/)
+    * HTML
+    * CSS
+        * [Bootstrap](https://getbootstrap.com/)
+    * Assembly
+* [Git](https://git-scm.com/) Version-control
+    * CLI
+    * Github
+    * Gitlab
+    * Bitbucket
+* IDEs
+    * VisualStudio
+    * VSCode
 
 ## Contact
 
-* Email <candelario.eguia@laverne.edu>
 * [LinkedIn](www.linkedin.com/in/cdeguia)
 * [Github](https://github.com/cdeguia)
-* [Free code camp](https://freecodecamp.com/cdeguia)
-* [GooglePlus](https://plus.google.com/113516011488617768237)
-* [Twitter](https://twitter.com/dceguia)
+* [Gitlab](https://gitlab.com/CDEguia)
