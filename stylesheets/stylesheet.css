@@ -259,6 +259,11 @@ ul {
 }
 
 @media (max-width: 464px) {
+
+  :root{
+    --largeIcon-size: 64px;
+    --largeIcon-increase: 24px;
+  }
   .navbar-brand,
   .navText {
     display: none;
