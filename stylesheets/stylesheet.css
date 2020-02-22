@@ -135,13 +135,13 @@ h1.other{
 }
 
 #about .container{
-    background-color: rgba(100, 100, 100, 0.9);
+    background-color: rgba(26, 24, 24, 0.918);
 }
 
 #about{
   background: url('../images/forest-1183524_1280.jpg') no-repeat center center fixed;
   background-size: cover;
-  color: black;
+  color: white;
 }
 
 #about img {
