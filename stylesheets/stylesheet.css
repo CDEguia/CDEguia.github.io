@@ -39,7 +39,7 @@ a:-webkit-any-link {
 }
 
 .navbar {
-  margin: 10px auto 0 auto;
+  margin: 10 auto 0 auto;
   background-color: #000;
   box-shadow: 0 0 30px #00e5e6, 1px 1px 2px black;
   border-radius: 10px;
@@ -111,7 +111,7 @@ h1.other{
 #know .container{
     background-color: rgba(124, 124, 124, 0.8);
     background-size: cover;
-    padding: 20px 0;
+    
 }
 
 #know p{
@@ -245,6 +245,10 @@ ul {
 
 @media (max-width: 768px) {
   
+    :root{
+        --largeIcon-size: 64px;
+        --largeIcon-increase: 24px;
+      }
   .navbar-right {
     float: right!important;
   }

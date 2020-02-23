@@ -1,6 +1,7 @@
 function winResize() {
-  $('#home').height(window.innerHeight);
-  $('#connect').height(window.innerHeight);
+  $('#home').height(window.innerHeight-10);
+  $('#know').height(window.innerHeight-35);
+  $('#connect').height(window.innerHeight-19);
 }
 
 $(document).ready(function () {
@@ -39,7 +40,7 @@ $(window).on('scroll', function () {
   $(window).trigger('custom_scroll', [scroll_change]);
 
 });
-
+/*
 $(window).on('custom_scroll', function pos(e, scroll_change) {
   if (scroll_change > 0) {
     $('#navigation').slideUp("slow");
@@ -47,7 +48,7 @@ $(window).on('custom_scroll', function pos(e, scroll_change) {
     $('#navigation').slideDown("slow"); 
   }
 });
-
+*/
 // animate the navigation bar on loading of window
 $(window).load(function() {
     $( "#navigation" ).show( 500, function(){$('h1').slideDown(500);});
