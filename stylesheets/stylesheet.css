@@ -177,8 +177,9 @@ li {
 
 .thumbnail {
   background-color: rgba(124, 124, 124, 0.8);
-  min-height: 580px;
+  min-height: 200px;
   position: relative;
+  padding-bottom: 40px;
 }
 
 .bottom{
