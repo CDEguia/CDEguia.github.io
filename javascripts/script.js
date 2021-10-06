@@ -1,7 +1,8 @@
 function winResize() {
-  $('#home').height(window.innerHeight-10);
-  $('#know').height(window.innerHeight-35);
-  $('#connect').height(window.innerHeight-19);
+  //$('#home').height(window.innerHeight-25);
+  //$('#about').min-height(window.innerHeight-25)
+  //$('#know').min-height(window.innerHeight-25);
+  //$('#connect').height(window.innerHeight-25);
 }
 
 $(document).ready(function () {
@@ -33,14 +34,16 @@ $(document).on('click', 'a[href^="#"]', function (e) {
 var previous_scroll = $(window).scrollTop();
 
 $(window).on('scroll', function () {
-  var scroll = $(window).scrollTop(),
-      scroll_change = scroll - previous_scroll;
+  var scroll = $(window).scrollTop(), 
+    scroll_change = scroll - previous_scroll;
+  
   previous_scroll = scroll;
-    revealOnScroll();
+  revealOnScroll();
   $(window).trigger('custom_scroll', [scroll_change]);
 
 });
 /*
+// Reveal navigation bar on scrolling up
 $(window).on('custom_scroll', function pos(e, scroll_change) {
   if (scroll_change > 0) {
     $('#navigation').slideUp("slow");

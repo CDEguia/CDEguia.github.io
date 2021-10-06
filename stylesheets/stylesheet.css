@@ -68,6 +68,7 @@ a:-webkit-any-link {
 
 .jumbo-size {
   position: relative;
+  min-height: 100%;
 }
 
 .vertical-align {
@@ -110,8 +111,7 @@ h1.other{
 
 #know .container{
     background-color: rgba(124, 124, 124, 0.8);
-    background-size: cover;
-    
+   
 }
 
 #know p{
@@ -214,6 +214,7 @@ ul {
 #connect .container{
     background-color: rgba(100, 100, 100, 0.6);
     border-radius: 35%;
+    padding-top: 20px;
 }
 
 .largeIcon{
@@ -244,10 +245,11 @@ ul {
   transition: .5s;
 }
 
+
 @media (max-width: 768px) {
   
     :root{
-        --largeIcon-size: 64px;
+        --largeIcon-size: 84px;
         --largeIcon-increase: 24px;
       }
   .navbar-right {
@@ -261,12 +263,13 @@ ul {
   .navbar-nav {
     display: flex;
   }
+
 }
 
 @media (max-width: 464px) {
 
   :root{
-    --largeIcon-size: 64px;
+    --largeIcon-size: 54px;
     --largeIcon-increase: 24px;
   }
   .navbar-brand,
