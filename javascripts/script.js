@@ -23,12 +23,24 @@ $(window).on('scroll', function () {
     scroll_change = scroll - previous_scroll;
   
   previous_scroll = scroll;
-  if (scroll_change > 50){
+  var h1 = document.querySelector('#know');
+  if (isInViewport(h1)) {
     revealOnScroll();
   }
+  
   $(window).trigger('custom_scroll', [scroll_change]);
 
 });
+
+var isInViewport = function (elem) {
+  var bounding = elem.getBoundingClientRect();
+  return (
+      bounding.top >= 0 &&
+      bounding.left >= 0 &&
+      bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+      bounding.right <= (window.innerWidth || document.documentElement.clientWidth)
+  );
+};
 /*
 // Reveal navigation bar on scrolling up
 $(window).on('custom_scroll', function pos(e, scroll_change) {
@@ -75,28 +87,24 @@ function slideDownNav() {
 }
 
 function revealOnScroll() {
-    var scrolled = $(window).scrollTop(),
-        win_height_padded = $(window).height() * 2.75;
-
-    // Showed...
-    $(".revealOnScroll:not(.animated)").each(function () {
-        var $this     = $(this),
-            offsetTop = $this.offset().top;
-        if (scrolled + win_height_padded >= offsetTop*1.1 && scrolled <= offsetTop + win_height_padded ) {
-                $this.addClass('animated');
-            $this.addClass('rightRotated');
-           
-        }
-    });
-    // Hidden...
-    $(".revealOnScroll.animated").each(function (index) {
-        var $this     = $(this),
-            offsetTop = $this.offset().top ;
-        if (scrolled + win_height_padded < offsetTop || scrolled > offsetTop + win_height_padded*.9) {
-            $(this).removeClass('animated')
-        }
-    });
-
+  
+  var scrolled = $(window).scrollTop(),
+  win_height_padded = $(window).height() * 2.75;
+  
+  // Showed...
+  $(".revealOnScroll:not(.animated)").each(function () {
+    var $this     = $(this);       
+    $this.addClass('animated');
+    $this.addClass('rightRotated');     
+  });
+  // Hidden...
+  //$(".revealOnScroll.animated").each(function (index) {
+  //    var $this     = $(this),
+  //        offsetTop = $this.offset().top ;
+  //    if (scrolled + win_height_padded < offsetTop || scrolled > offsetTop + win_height_padded*.9) {
+  //        $(this).removeClass('animated')
+  //    }
+  //});
 }
 
 revealOnScroll();
