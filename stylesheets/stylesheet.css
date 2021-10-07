@@ -254,7 +254,7 @@ ul {
 @media (max-width: 768px) {
   
     :root{
-        --largeIcon-size: 84px;
+        --largeIcon-size: 114px;
         --largeIcon-increase: 24px;
       }
   .navbar-right {
@@ -274,8 +274,8 @@ ul {
 @media (max-width: 464px) {
 
   :root{
-    --largeIcon-size: 54px;
-    --largeIcon-increase: 24px;
+    --largeIcon-size: 74px;
+    --largeIcon-increase: 16px;
   }
   .navbar-brand,
   .navText {
